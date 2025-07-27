@@ -1,0 +1,301 @@
+:root {
+  --bg1: #1d2026;
+  --bg2: rgb(30, 33, 40);
+  --blue1: rgb(14, 135, 249);
+  --blue2: rgb(65, 133, 244);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1d2026;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    overflow-y: hidden;
+  }
+}
+
+
+.navbar {
+  background-color: #20242b;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar h1 {
+  font-family: Arial, sans-serif;
+  color: var(--blue1);
+  font-size: 1.8rem;
+}
+
+.hero {
+  text-align: center;
+  height: 90060px;
+  padding: 4rem 2rem 3rem;
+}
+
+
+.hero h2 {
+  font-size: 2.2rem;
+  color: var(--blue1);
+}
+
+.hero p {
+  margin-top: 0.8rem;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    display: none;
+  }
+}
+
+.game-gallery {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .game-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.game-card {
+  background: var(--bg2);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .game-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .game-card {
+    height: 100%;
+  }
+
+  .screenshot {
+    height: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .game-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .screenshot {
+    height: 320px;
+  }
+}
+
+
+.game-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 35px rgba(14, 135, 249, 0.3);
+}
+
+.screenshot {
+  width: 100%;
+  height: 260px; /* smaller for better fit */
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+
+.game-card:hover .screenshot {
+  filter: brightness(1.05);
+}
+
+.game-card h3 {
+  font-size: 1.5rem;
+  color: var(--blue1);
+}
+
+.game-card p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  background: var(--blue2);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  background: var(--blue1);
+  transform: translateY(-2px);
+}
+
+footer {
+  position: fixed;
+  box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.3);
+  bottom: 0px;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  background: #20242b;
+  font-size: 0.9rem;
+  color: #888;
+  z-index: 1000;
+}
+
+.content {
+    position: absolute;
+    top: 12%;         /* height of the header */
+    bottom: 9%;      /* height of the footer */
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    position: absolute;
+    top: 20%; 
+    bottom: hidden; 
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+}
+
+/* Dropdown container */
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align dropdown under the text */
+  gap: 10px;
+  margin: 0 auto; /* Center the dropdown within the header */
+  max-width: 250px;
+}
+
+/* Label styling */
+.dropdown-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  animation: pulseText 2s infinite; /* Optional label animation */
+  text-align: center;
+}
+
+/* Dropdown styling */
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px; /* Modern rounding */
+    background-color: #1e2128;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0e87f9;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease; /* Smooth hover and focus transitions */
+    box-shadow: 0 5px 15px rgba(14, 135, 249, 0.4); /* Glow effect */
+    transform-origin: top center; /* Anchor for animations */
+    animation: dropdownAppear 0.8s ease; /* Drop-in animation */
+}
+
+/* Dropdown hover effect */
+.dropdown:hover {
+    background-color: #1f252e;
+    box-shadow: 0 5px 20px rgba(14, 135, 249, 0.6); /* Enhanced glow */
+}
+
+
+[data-key] {
+  transition: opacity 0.6s ease;
+}
+
+
+/* Header name (Kasra Seydi) */
+h4[data-key="nameb"] {
+    font-size: 20px;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    margin: 0 0 20px 0; /* Add space below the text */
+    position: relative; /* Reset absolute positioning */
+    text-align: left; /* Center text */
+}
+
+
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+.site-title {
+  color: #0e87f9;
+  margin-left: 40px;
+  font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  .nav-left {
+    flex-direction: column;
+    align-items: flex-start; /* or center if you prefer */
+    gap: 8px;
+  }
+
+  .site-title {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: -5px;
+  }
+
+  .dropdown {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .dropdown-wrapper {
+    align-self: center;
+  }
+
+}

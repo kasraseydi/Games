@@ -1,14 +1,15 @@
 {
-    "webtitle": "Kasra Seydi - Games",
-    "name" : "Kasra Seydi",
+    "web-t" : "Kasra Seydi - Games",
+    "title" : "Kasra Seydi",
 
-    "town1" : "Relaxing",
-    "town2" : "Townscaper",
-    "town3" : "Build quaint island towns with curvy streets. Build small hamlets, soaring cathedrals, canal networks, or sky cities on stilts. Block by block. No goal.",
-    "town4" : "Play Now!",
+    "G1" : "Townscape",
+    "G1D" : "Townscaper is a relaxing sandbox city-builder where you place colorful blocks to create charming, procedural island towns with no goals or limits.",
 
-    "na1": "N/A",
-    "na2": "Coming Soon!",
-    "na3": "N/A",
-    "na4": "???"
+    "G2" : "Coming Soon!",
+    "G2D" : "N/A",
+
+    "play" : "Play",
+    "Nal" : "NO LINK",
+    "Naf" : "NO FILE"
+
 }

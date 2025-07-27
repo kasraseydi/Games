@@ -1,168 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="The games i released!">
-    <meta name="keywords" content="game,gaming,pc,developer,web,webiste">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title data-key="webtitle">Kasra Seydi - Games</title>
-    <link rel="icon" type="image/png" href="https://kasraseydi.github.io/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://kasraseydi.github.io/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://kasraseydi.github.io/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="https://kasraseydi.github.io/favicons/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="https://kasraseydi.github.io/favicons/favicon-64x64.png">
-    <link rel="icon" href="https://kasraseydi.github.io/favicons/favicon.ico" type="image/x-icon"/>
-    <link rel="icon" type="image/svg+xml" href="https://kasraseydi.github.io/favicons/favicon.svg">
-    <link rel="shortcut icon" href="https://kasraseydi.github.io/favicons/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://kasraseydi.github.io/favicons/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-title" content="Kasra Seydi">
-    <link rel="manifest" href="https://kasraseydi.github.io/favicons/site.webmanifest">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://kasraseydi.github.io/langdd.css">
-    <!--Imports-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
-    <style>
-        @font-face { font-family: arialboldtitle; src: url('fonts/arialbold.ttf'); } 
-		.TitleHeader {
-		   font-family: arialboldtitle
-		}
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasra Seydi - Games</title>
+    <meta name="description" content="Kasra Seydi(aka ItsDenji) an independent Developer.">
+    <meta property="og:image" content="https://kasraseydi.github.io/ogimg.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="curly hair with round glasses and a cross earring" />
+    <meta property="og:title" content="Kasra Seydi - Website" />
+    <meta propert="og:description" content="a Newbie Developer's Website! Kasra(Aka ItsDenji)" />
+    <meta property="twitter:image" content="https://kasraseydi.github.io/ogimg.png" />
+    <meta property="twitter:image:width" content="1200" />
+    <meta property="twitter:image:height" content="1200" />
+    <meta property="twitter:image:alt" content="curly hair with round glasses and a cross earring" />
+    <meta property="twitter:title" content="Kasra Seydi - Website" />
+    <meta propert="twitter:description" content="an independent Developer's Website! Kasra(Aka ItsDenji)" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Kasra" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title id="page-title" data-key="web-t">Kasra Seydi - Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="/">
+      <img class="logo" height="80px" width="80px" style="position: fixed;top: -6px;left: 10px;" src="https://kasraseydi.github.io/favicons/favicon.svg" alt="Logo">
+    </a>
+    <h1 class="site-title" data-key="title">Kasra Seydi</h1>
+    <div class="dropdown-wrapper">
+      <select id="languageSelector" class="dropdown">
+        <option value="fa">🇮🇷 Persian</option>
+        <option value="en">🇺🇸 English</option>
+        <option value="ru">🇷🇺 Russian</option>
+        <option value="fr">🇫🇷 French</option>
+        <option value="ar">🇸🇦 Arabic</option>
+        <option value="pl">🇵🇱 Polish</option>
+        <option value="ja">🇯🇵 Japanese</option>
+        <option value="zh">🇨🇳 Chinese</option>
+      </select>
+    </div>
+  </div>
+</nav>
+
+  <section class="hero">
+  </section>
+
+  <div class="content">
+  <main class="game-gallery">
+    <!-- Game Cards -->
+    <div class="game-card">
+      <div class="screenshot" style="background-image: url('https://kasraseydi.github.io/Games/img/1.jpg');"></div>
+      <h3 data-key="G1">Townscape</h3>
+      <p data-key="G1D">Townscaper is a relaxing sandbox city-builder where you place colorful blocks to create charming, procedural island towns with no goals or limits.</p>
+      <div class="actions">
+        <a href="https://townscapergame.github.io/" style="position: relative;margin-top: 30px;" target="_blank" class="btn" data-key="play">Play</a>
+      </div>
     </div>
 
-    <!-- Header Section Begin -->
-    
-    <header>
-        <a href="https://kasraseydi.github.io/"><img height="100" width="100" src="https://kasraseydi.github.io/favicons/favicon.svg" alt="Logo"></a>
-        <h2 class="TitleHeader" style="margin-left: 99px;margin-top: 25px; color: aliceblue; position: absolute; top: 0;" data-key="name">Kasra Seydi</h2>
-        <div class="dropdown-container">
-            <label for="languageSelector" class="dropdown-label">🌐 Choose Your Language:</label>
-            <div class="dropdown-wrapper">
-                <select id="languageSelector" class="dropdown">
-                    <option value="fa">🇮🇷 Persian</option>
-                    <option value="en">🇺🇸 English</option>
-                    <option value="ru">🇷🇺 Russian</option>
-                    <option value="fr">🇫🇷 French</option>
-                    <option value="ar">🇸🇦 Arabic</option>
-                    <option value="pl">🇵🇱 Polish</option>
-                    <option value="ja">🇯🇵 Japanese</option>
-                    <option value="zh">🇨🇳 Chinese</option>
-                </select>
-            </div>
-        </div>
-    </header>
-    <!-- Header End -->
+    <div class="game-card">
+      <div class="screenshot" style="background-image: url('https://kasraseydi.github.io/Games/img/2.jpg');"></div>
+      <h3 data-key="G2">Coming Soon!</h3>
+      <p data-key="G2D">N/A</p>
+      <div class="actions">
+        <a style="pointer-events: none; background-color: gray; cursor: default;position: relative;margin-top: 70px;" href="" onclick="return false;" target="_blank" class="btn" data-key="Nal">NO LINK</a>
+        <a style="pointer-events: none; background-color: gray; cursor: default;position: relative;margin-top: 70px;" href="" onclick="return false;" download class="btn" data-key="Naf">NO FILE</a>
+      </div>
+    </div>
 
-    <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero__slider owl-carousel">
-                <div class="hero__items set-bg" data-setbg="img/1.jpg">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label" data-key="town1">Relaxing</div>
-                                <h2 data-key="town2">TownScaper</h2> 
-                                <p data-key="town3">Build quaint island towns with curvy streets. Build small hamlets, soaring cathedrals, canal networks, or sky cities on stilts. Block by block. No goal.</p>
-                                <a href="https://townscapergame.github.io/"><span data-key="town4">Play Now!</span> <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__items set-bg" data-setbg="img/2.jpg">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label" data-key="na1">N/A</div>
-                                <h2 data-key="na2">Coming Soon!</h2>
-                                <p data-key="na3">N/A</p>
-                                <a href="#NoLink"><span data-key="na4">???</span> <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                <div class="hero__items set-bg" data-setbg="img/2.jpg">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label">N/A</div>
-                                <h2>Coming Soon!</h2>
-                                <p>N/A</p>
-                                <a href="#NoLink"><span>???</span> <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-            </div>
-        </div>
-    </section>
+    <!-- Add more game cards as needed -->
+  </main>
+</div>
 
+  <footer>
+    <p>Kasra Seydi | an independent developer</p>
+  </footer>
 
-<!-- Js Plugins -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/mixitup.min.js"></script>
-<script src="js/jquery.slicknav.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
-<script src="https://kasraseydi.github.io/lang.js"></script>
-<script>
-  // Function to detect or retrieve the dynamic language
-function getDynamicLanguage() {
-    // Retrieve from localStorage if available
-    let storedLang = localStorage.getItem('buttonLang');
-    if (storedLang) return storedLang;
-
-    // Fallback to browser detection if no stored language
-    let browserLang = navigator.language || navigator.userLanguage;
-    return browserLang.substring(0, 2); // Return 'fa', 'en', etc.
-}
-
-// Function to load the language JSON and update the page
-function changeLanguage(language) {
-    fetch(`langs/${language}.json`) // Fetch the JSON file for the selected language
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Could not load ${language}.json`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            // Update all elements with data-key attributes
-            document.querySelectorAll("[data-key]").forEach(element => {
-                const key = element.getAttribute("data-key");
-                if (data[key]) {
-                    element.innerText = data[key];
-                }
-            });
-            langs = language; // Dynamically update the current language
-        })
-        .catch(error => console.error("Error loading language file:", error));
-}
-
-// Load the default language on page load
-document.addEventListener("DOMContentLoaded", function () {
-    var langs = getDynamicLanguage(); // Dynamically determine the starting language
-    changeLanguage(langs); // Load the dynamic language
-});
-  </script>
+  <script src="https://kasraseydi.github.io/lang.js"></script>
 
 </body>
-
 </html>

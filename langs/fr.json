@@ -1,14 +1,14 @@
 {
-    "webtitle": "Kasra Seydi - Jeux",
-    "name": "Kasra Seydi",
+  "web-t": "Kasra Seydi - Jeux",
+  "title": "Kasra Seydi",
 
-    "town1": "Relaxant",
-    "town2": "Townscaper",
-    "town3": "Construisez de charmantes villes insulaires avec des rues sinueuses. Construisez des hameaux, des cathédrales majestueuses, des réseaux de canaux ou des villes célestes sur pilotis. Bloc par bloc. Pas d'objectif.",
-    "town4": "Jouez maintenant!",
+  "G1": "Townscape",
+  "G1D": "Townscaper est un jeu de construction de ville bac à sable relaxant où vous placez des blocs colorés pour créer de charmantes villes insulaires procédurales, sans objectifs ni limites.",
 
-    "na1": "N/A",
-    "na2": "Bientôt disponible!",
-    "na3": "N/A",
-    "na4": "???"
+  "G2": "Bientôt disponible !",
+  "G2D": "N/A",
+
+  "play": "Jouer",
+  "Nal": "PAS DE LIEN",
+  "Naf": "PAS DE FICHIER"
 }

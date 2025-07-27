@@ -1,14 +1,14 @@
 {
-    "webtitle": "Kasra Seydi - Gry",
-    "name": "Kasra Seydi",
+  "web-t": "Kasra Seydi - Gry",
+  "title": "Kasra Seydi",
 
-    "town1": "Relaksujące",
-    "town2": "Townscaper",
-    "town3": "Buduj malownicze wyspiarskie miasteczka z krętymi uliczkami. Twórz małe wioski, wysokie katedry, sieci kanałów lub miasta na palach. Blok po bloku. Bez celu.",
-    "town4": "Zagraj teraz!",
+  "G1": "Townscape",
+  "G1D": "Townscaper to relaksujący sandboxowy city-builder, w którym umieszczasz kolorowe bloki, tworząc urocze, proceduralne miasta na wyspach bez celów i ograniczeń.",
 
-    "na1": "N/A",
-    "na2": "Wkrótce!",
-    "na3": "N/A",
-    "na4": "???"
+  "G2": "Wkrótce!",
+  "G2D": "Brak danych",
+
+  "play": "Graj",
+  "Nal": "BRAK LINKU",
+  "Naf": "BRAK PLIKU"
 }
