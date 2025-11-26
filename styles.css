@@ -17,6 +17,21 @@ body {
   color: white;
 }
 
+.logo {
+	animation: glow-unglow infinite 5s;
+}
+
+@keyframes glow-unglow {
+	0% {
+		filter: drop-shadow(0 7px 7px rgba(255, 255, 255, 0.5));
+	}
+	50% {
+		filter: drop-shadow(0 7px 7px rgba(255, 255, 255, 0));
+	}
+	100% {
+		filter: drop-shadow(0 7px 7px rgba(255, 255, 255, 0.5));
+	}
+}
 
 @media (min-width: 1024px) {
   body {
@@ -194,7 +209,7 @@ footer {
 @media (min-width: 1024px) {
   .content {
     position: absolute;
-    top: 20%; 
+    top: 14%; 
     bottom: hidden; 
     overflow: hidden;
     overflow-y: hidden;
